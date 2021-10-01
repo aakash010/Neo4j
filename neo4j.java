@@ -106,7 +106,7 @@ public class Main {
 
                     for (int i = 0; i < rows ;i++) {  // 
                         final Group g =(Group) recordReader.read();
-                        printGroup(g);     //  calling function to create a->b relationship
+                        printGroup(g);     //  calling function to create a->b relationship statement
                     }
                 }
             }
@@ -114,7 +114,7 @@ public class Main {
                 r.close();
             }
         } catch (IOException e) {
-            System.out.println("Error reading parquet file.");
+            System.out.println("Error readingin the parquet file.");
             e.printStackTrace();
         }
     }
