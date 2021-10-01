@@ -57,20 +57,20 @@ public class Main {
 //        CreateIndexResponse createIndexResponse = client.indices().create(request, RequestOptions.DEFAULT);
 //        System.out.println("response id: " + createIndexResponse.index());
 
-//        IndexRequest indexRequest = new IndexRequest("sampleindex");
-//        indexRequest.id("001");
-//        indexRequest.source("SampleKey","SampleValue");
-//        IndexResponse indexResponse = client.index(indexRequest, RequestOptions.DEFAULT);
-//        System.out.println("response id: "+indexResponse.getId());
-//        System.out.println("response name: "+indexResponse.getResult().name());
+       IndexRequest indexRequest = new IndexRequest("sampleindex");
+       indexRequest.id("001");
+       indexRequest.source("SampleKey","SampleValue");
+       IndexResponse indexResponse = client.index(indexRequest, RequestOptions.DEFAULT);
+       System.out.println("response id: "+indexResponse.getId());
+       System.out.println("response name: "+indexResponse.getResult().name());
 
-//        HashMap<String, Integer> map = new HashMap<String, Integer>();
-//        map.put("keyOne", 10);
-//        map.put("keyTwo", 30);
-//        map.put("KeyThree", 20);
-//
-//        IndexRequest indexRequest = new IndexRequest("sampleindex");
-//        indexRequest.id("002");
+       HashMap<String, Integer> map = new HashMap<String, Integer>();
+       map.put("keyOne", 10);
+       map.put("keyTwo", 30);
+       map.put("KeyThree", 20);
+
+       IndexRequest indexRequest = new IndexRequest("sampleindex");
+       indexRequest.id("002");
 //        indexRequest.source(map);
 //        IndexResponse indexResponse = client.index(indexRequest, RequestOptions.DEFAULT);
 //        System.out.println("response id: "+indexResponse.getId());
